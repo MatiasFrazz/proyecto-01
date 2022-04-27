@@ -1,0 +1,256 @@
+   
+   /* Imagen de fondo */
+
+* body{
+    background-image: url("images/argia-logo.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+    /*Navegacion principal */
+
+nav{
+    font-size: large;
+    font-weight: 300;
+    font-variant: small-caps;
+}
+    
+ nav ul{
+    list-style-type: none;
+}
+    
+    /* Footer global */
+    
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+        
+    /* Estilado pagina principal */
+    
+.nHome{   
+    background-color:  rgba(255, 230, 0, 0.863);
+        
+            
+    display: flex;
+    align-items: center;
+}
+
+.headerHome{
+    background-color: rgba(255, 230, 0, 0.932);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+main section p{
+    font-size: medium;
+    font-weight: 850;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+
+.mainHome{
+    background-color:  rgba(255, 230, 0, 0.863);
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+/* =========================== */
+
+.nVel{
+    background-color: rgba(137, 43, 226, 0.884);
+
+    display: flex;
+}
+
+.vel-uno{
+    background-color: rgba(137, 43, 226, 0.781);   
+
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-template-rows: 2fr;
+    
+    text-align: center;
+    font-size: large;
+}
+
+/* =========================== */
+
+.tablep{
+    display: inline-block;
+
+    border: 5px;
+    border-style: double;
+    border-radius: 10px;
+
+    background-color: rgb(238, 238, 238);
+
+    font-weight: 600;
+    font-style: oblique;
+}
+
+.tPcs{
+    background-color: rgb(255, 127, 80);
+
+    display: flex;
+    margin: 0;
+    justify-content: center;
+}
+
+.nPcs{
+    background-color: rgba(255, 127, 80, 0.801);
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* =========================== */
+
+.navFde{
+    background-color: rgba(127, 255, 212, 0.623);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.imgsFde{
+   background-color: rgba(127, 255, 212, 0.623);
+
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   align-items: center;
+}
+
+
+.mainFde p{
+    background-color: rgba(127, 255, 212, 0.623);
+
+       
+    font-size: large;
+    font-weight: 600;
+    font-style: oblique;
+}
+
+.formFde{
+    background-color: rgba(98, 233, 188, 0.836);
+
+    display: flex;
+    justify-content: center;
+
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+    /* Empieza Info */
+
+.headerInf{
+    background-color: rgba(220, 20, 60, 0.911);
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform:capitalize;
+}
+
+.nInf{    
+    background-color: rgba(220, 20, 60, 0.815);
+
+    display: flex;
+}
+
+.mainInf {
+        background-color: rgba(220, 20, 60, 0.699);
+        
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        overflow: hidden;
+    }
+
+.mainInf p{
+    background-color: rgba(220, 20, 60, 0.699);
+
+    font-size: larger;
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* ================================================== */
+   
+        /* Media Queries */
+
+@media screen and (min-width: 768px) {
+
+        /* Home */
+
+.mainHome{    
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    }
+        
+    /* Velas */
+            
+.vel-uno{           
+    display: grid;
+    grid-template-columns:  2fr  2fr;
+    grid-row: 4fr;
+    grid-gap: 10px;
+    }
+
+    
+    
+    /* Fde */
+        
+.imgsFde{
+    display: grid;
+    grid-template-columns: 4fr 4fr;
+    justify-items: center;
+    }
+
+    /* Info */
+
+.mainInf {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-areas:
+    "header header"
+    "cont solub"
+    "hid ."
+    "durab gas"
+    "footer footer"
+    ;
+    }
+    
+    /* Areas Grids */
+
+.infoCont{
+    grid-area: cont;
+}
+
+.infoSolub{
+    grid-area: solub;
+}
+
+.infoGas{
+    grid-area: gas;
+}
+
+.infoHid{
+    grid-area: hid;
+}
+
+.infoDurab{
+    grid-area: durab;
+}
+   
+}
