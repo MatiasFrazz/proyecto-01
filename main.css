@@ -1,7 +1,7 @@
    
    /* Imagen de fondo */
 
-* body{
+   * body{
     background-image: url("images/argia-logo.jpg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -13,7 +13,7 @@
 
 nav{
     font-size: large;
-    font-weight: 300;
+    font-weight: 650;
     font-variant: small-caps;
 }
     
@@ -33,15 +33,11 @@ footer{
     /* Estilado pagina principal */
     
 .nHome{   
-    background-color:  rgba(255, 230, 0, 0.863);
-        
-            
-    display: flex;
-    align-items: center;
+    background-color:  rgb(255, 230, 0);
 }
 
 .headerHome{
-    background-color: rgba(255, 230, 0, 0.932);
+    background-color: rgba(255, 230, 0, 0.822);
 
     display: flex;
     flex-direction: column;
@@ -66,7 +62,11 @@ main section p{
 
 .nVel{
     background-color: rgba(137, 43, 226, 0.884);
+}
 
+.hVel{
+    background-color: rgba(137, 43, 226, 0.781);
+    
     display: flex;
 }
 
@@ -162,9 +162,7 @@ main section p{
 }
 
 .nInf{    
-    background-color: rgba(220, 20, 60, 0.815);
-
-    display: flex;
+    background-color: rgb(220, 20, 60);
 }
 
 .mainInf {
@@ -190,7 +188,17 @@ main section p{
 
 @media screen and (min-width: 768px) {
 
-        /* Home */
+    /* Imagen fondo */
+
+* body{
+    background-image: url("images/argia-logo.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+}
+ 
+    /* Home */
 
 .mainHome{    
     display: flex;
