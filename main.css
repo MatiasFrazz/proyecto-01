@@ -29,13 +29,8 @@ footer{
     justify-content: center;
     align-items: center;
 }
-        
     /* Estilado pagina principal */
-/*     
-.nHome{   
-    background-color:  rgb(255, 230, 0);
-} */
-
+    
 .headerHome{
     background-color: rgba(255, 230, 0, 0.822);
 
