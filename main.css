@@ -31,11 +31,6 @@ footer{
 }
         
     /* Estilado pagina principal */
-    
-.nHome{   
-    background-color:  rgb(255, 230, 0);
-}
-
 .headerHome{
     background-color: rgba(255, 230, 0, 0.822);
 
@@ -58,16 +53,10 @@ main section p{
     flex-wrap: wrap;
     align-items: center;
 }
+
 /* =========================== */
-
-.nVel{
-    background-color: rgba(137, 43, 226, 0.884);
-}
-
 .hVel{
     background-color: rgba(137, 43, 226, 0.781);
-    
-    display: flex;
 }
 
 .vel-uno{
@@ -112,13 +101,6 @@ main section p{
 }
 
 /* =========================== */
-
-.navFde{
-    background-color: rgba(127, 255, 212, 0.623);
-
-    display: flex;
-    flex-direction: column;
-}
 
 .imgsFde{
    background-color: rgba(127, 255, 212, 0.623);
@@ -201,22 +183,54 @@ main section p{
     /* Home */
 
 .mainHome{    
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    justify-items: center;
+
+    grid-template-areas: 
+    "video p"
+    ;   
     }
-        
+
+.vidHome{
+    grid-area: video;
+}
+
+.pHome{
+    grid-area: p;
+}
+
+.vidHome{
+    animation-name: ent;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+.vidHome:hover{
+    transform: scale(1.3);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+}
+
+@keyframes ent{
+    0%{
+        transform: translateX(500px);
+    }
+
+    100%{
+        transform: translateX(0px);
+    
+    }
+}      
     /* Velas */
             
 .vel-uno{           
-    display: grid;
-    grid-template-columns:  2fr  2fr;
+     display: grid;
+    grid-template-columns:  2fr 2fr;
     grid-row: 4fr;
-    grid-gap: 10px;
+    grid-gap: 5px;
     }
 
-    
-    
     /* Fde */
         
 .imgsFde{
@@ -225,6 +239,12 @@ main section p{
     justify-items: center;
     }
 
+.formFde{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+}
     /* Info */
 
 .mainInf {
