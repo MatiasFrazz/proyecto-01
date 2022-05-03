@@ -31,10 +31,10 @@ footer{
 }
         
     /* Estilado pagina principal */
-    
+/*     
 .nHome{   
     background-color:  rgb(255, 230, 0);
-}
+} */
 
 .headerHome{
     background-color: rgba(255, 230, 0, 0.822);
@@ -106,18 +106,18 @@ main section p{
 
 .nPcs{
     background-color: rgba(255, 127, 80, 0.801);
-
-    display: flex;
-    flex-direction: column;
 }
 
 /* =========================== */
 
-.navFde{
+.nFde{
+    background-color: rgba(127, 255, 212, 0.623);
+}
+
+.hFde{
     background-color: rgba(127, 255, 212, 0.623);
 
     display: flex;
-    flex-direction: column;
 }
 
 .imgsFde{
@@ -128,21 +128,11 @@ main section p{
    flex-direction: column;
    align-items: center;
 }
-
-
-.mainFde p{
-    background-color: rgba(127, 255, 212, 0.623);
-
-       
-    font-size: large;
-    font-weight: 600;
-    font-style: oblique;
-}
-
 .formFde{
-    background-color: rgba(98, 233, 188, 0.836);
-
+    background-color: rgba(0, 255, 255, 0.801);
+    
     display: flex;
+    flex-direction: column;
     justify-content: center;
 
     text-align: center;
@@ -150,10 +140,16 @@ main section p{
     font-weight: 700;
 }
 
+.mainFde p{
+    font-size: large;
+    font-weight: 600;
+    font-style: oblique;
+}
+
     /* Empieza Info */
 
 .headerInf{
-    background-color: rgba(220, 20, 60, 0.911);
+    background-color: rgba(220, 20, 60, 0.863);
 
     display: flex;
     flex-direction: column;
@@ -166,7 +162,7 @@ main section p{
 }
 
 .mainInf {
-        background-color: rgba(220, 20, 60, 0.699);
+        background-color: rgba(220, 20, 60, 0.671);
         
         display: flex;
         flex-direction: column;
@@ -215,8 +211,6 @@ main section p{
     grid-gap: 10px;
     }
 
-    
-    
     /* Fde */
         
 .imgsFde{
@@ -225,6 +219,16 @@ main section p{
     justify-items: center;
     }
 
+.mainFde{
+     background-color: rgba(127, 255, 212, 0.623);
+    
+    display: flex;
+    justify-content: center;
+    
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
     /* Info */
 
 .mainInf {
