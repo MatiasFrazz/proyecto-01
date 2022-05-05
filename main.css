@@ -40,23 +40,27 @@ footer{
     text-align: center;
 }
 
-main section p{
-    font-size: medium;
-    font-weight: 850;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-}
 
 .mainHome{
     background-color:  rgba(255, 230, 0, 0.863);
-
+    
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    flex-wrap: wrap;   
+    text-align: center;
+}
+
+main section p{
+    font-size: large;
+    font-weight: 900;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    padding-right: 20px;
 }
 
 /* =========================== */
+
 .hVel{
     background-color: rgba(137, 43, 226, 0.781);
+    text-align: center;
 }
 
 .vel-uno{
@@ -102,13 +106,20 @@ main section p{
 
 /* =========================== */
 
+.hFde{
+    background-color: rgba(0, 255, 255, 0.87);
+
+    text-align: center;
+    margin: 0rem;
+}
+
 .imgsFde{
-   background-color: rgba(127, 255, 212, 0.623);
+   background-color: rgba(127, 255, 212, 0.836);
 
    display: flex;
    flex-wrap: wrap;
-   flex-direction: column;
-   align-items: center;
+   justify-content: center;
+   text-align: center;
 }
 
 
@@ -182,10 +193,14 @@ main section p{
  
     /* Home */
 
-.mainHome{    
+.mainHome{     
     display: grid;
-    grid-template-columns: 5fr 3fr;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr;
     justify-items: center;
+    align-items: center;
+    text-align: center;
+
 
     grid-template-areas: 
     "video p"
@@ -222,22 +237,14 @@ main section p{
     
     }
 }      
-    /* Velas */
-            
-.vel-uno{           
-     display: grid;
-    grid-template-columns:  2fr 2fr;
-    grid-row: 4fr;
-    grid-gap: 5px;
-    }
 
     /* Fde */
         
-.imgsFde{
+/* .imgsFde{
     display: grid;
     grid-template-columns: 4fr 4fr;
     justify-items: center;
-    }
+    } */
 
 .formFde{
     display: flex;
