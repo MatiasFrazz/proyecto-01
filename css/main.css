@@ -2,7 +2,7 @@
    /* Imagen de fondo */
 
    * body{
-    background-image: url("images/argia-logo.jpg");
+    background-image: url("../images/argia-logo.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -60,6 +60,7 @@ main section p{
 
 .hVel{
     background-color: rgba(137, 43, 226, 0.781);
+    margin: 0;
     text-align: center;
 }
 
@@ -77,11 +78,12 @@ main section p{
 /* =========================== */
 
 .tablep{
-    display: inline-block;
+    display:inline-block;
 
     border: 5px;
     border-style: double;
     border-radius: 10px;
+    justify-content: space-between;
 
     background-color: rgb(238, 238, 238);
 
@@ -184,7 +186,7 @@ main section p{
     /* Imagen fondo */
 
 * body{
-    background-image: url("images/argia-logo.jpg");
+    background-image: url("../images/argia-logo.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -236,7 +238,20 @@ main section p{
         transform: translateX(0px);
     
     }
-}      
+}    
+
+    /* Velas */
+
+.vel-uno{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: 2fr;
+    grid-gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
     /* formulario-fde    */
 .formFde{
     display: flex;
