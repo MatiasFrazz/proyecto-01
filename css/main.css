@@ -1,312 +1,190 @@
-   
-   /* Imagen de fondo */
+/* Imagen de fondo */
+* body {
+  background-image: url("../images/argia-logo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
 
-   * body{
-    background-image: url("../images/argia-logo.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    background-attachment: fixed;
-}
+/*Encabezados*/
+header {
+  display: grid;
+  flex-direction: column;
+  overflow: hidden;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-style: oblique; }
+  header h1 {
+    margin: 0; }
 
-    /*Navegacion principal */
+/*Navegacion principal */
+nav {
+  font-size: large;
+  font-weight: 650;
+  font-variant: small-caps; }
+  nav ul {
+    list-style-type: none; }
 
-nav{
-    font-size: large;
-    font-weight: 650;
-    font-variant: small-caps;
-}
-    
- nav ul{
-    list-style-type: none;
-}
-    
-    /* Footer global */
-    
-footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-        
-    /* Estilado pagina principal */
-.headerHome{
-    background-color: rgba(255, 230, 0, 0.822);
+/* Footer global */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
+/* Estilado pagina principal */
+.headerHome {
+  background-color: rgba(255, 230, 0, 0.822); }
 
+.mainHome {
+  background-color: rgba(255, 230, 0, 0.863);
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center; }
 
-.mainHome{
-    background-color:  rgba(255, 230, 0, 0.863);
-    
-    display: flex;
-    flex-wrap: wrap;   
-    text-align: center;
-}
-
-main section p{
-    font-size: large;
-    font-weight: 900;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-    padding-right: 20px;
-}
+main p {
+  font-size: large;
+  font-weight: 900;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 10px; }
 
 /* =========================== */
+.hVel {
+  background-color: rgba(137, 43, 226, 0.781); }
 
-.hVel{
-    background-color: rgba(137, 43, 226, 0.781);
-    margin: 0;
-    text-align: center;
-}
-
-.vel-uno{
-    background-color: rgba(137, 43, 226, 0.781);   
-
-    display: grid;
-    grid-template-columns: 3fr;
-    grid-template-rows: 2fr;
-    padding-left: 50px;
-    
-    text-align: center;
-    font-size: large;
-}
+.vel-uno {
+  background-color: rgba(137, 43, 226, 0.781);
+  display: grid;
+  grid-template-columns: 3fr;
+  grid-template-rows: 2fr;
+  padding: 50px;
+  text-align: center;
+  font-size: large; }
 
 /* =========================== */
+.tablep {
+  display: inline-block;
+  border: 5px;
+  border-style: double;
+  border-radius: 10px;
+  justify-content: space-between;
+  background-color: rgb(238, 238, 238);
+  font-weight: 600;
+  font-style: oblique; }
 
-.tablep{
-    display:inline-block;
+.tPcs {
+  background-color: coral; }
 
-    border: 5px;
-    border-style: double;
-    border-radius: 10px;
-    justify-content: space-between;
-
-    background-color: rgb(238, 238, 238);
-
-    font-weight: 600;
-    font-style: oblique;
-}
-
-.tPcs{
-    background-color: rgb(255, 127, 80);
-
-    display: flex;
-    margin: 0;
-    justify-content: center;
-}
-
-.nPcs{
-    background-color: rgba(255, 127, 80, 0.801);
-
-    display: flex;
-    flex-direction: column;
-}
+.nPcs {
+  background-color: rgba(255, 127, 80, 0.801); }
 
 /* =========================== */
+.hFde {
+  background-color: rgba(0, 255, 255, 0.87); }
 
-.hFde{
-    background-color: rgba(0, 255, 255, 0.87);
+.imgsFde {
+  background-color: rgba(127, 255, 212, 0.836);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center; }
 
-    text-align: center;
-    margin: 0rem;
-}
+.mainFde {
+  background-color: rgba(127, 255, 212, 0.623); }
 
-.imgsFde{
-   background-color: rgba(127, 255, 212, 0.836);
+.formFde {
+  background-color: rgba(98, 233, 188, 0.836);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700; }
 
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   text-align: center;
-}
+/* Empieza Info */
+.headerInf {
+  background-color: rgba(220, 20, 60, 0.911); }
 
-
-.mainFde p{
-    background-color: rgba(127, 255, 212, 0.623);
-
-       
-    font-size: large;
-    font-weight: 600;
-    font-style: oblique;
-}
-
-.formFde{
-    background-color: rgba(98, 233, 188, 0.836);
-
-    display: flex;
-    justify-content: center;
-
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-
-    /* Empieza Info */
-
-.headerInf{
-    background-color: rgba(220, 20, 60, 0.911);
-
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    text-transform:capitalize;
-}
-
-.nInf{    
-    background-color: rgb(220, 20, 60);
-}
+.nInf {
+  background-color: crimson; }
 
 .mainInf {
-        background-color: rgba(220, 20, 60, 0.699);
-        
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        overflow: hidden;
-    }
-
-.mainInf p{
-    background-color: rgba(220, 20, 60, 0.699);
-
-    font-size: larger;
-    font-weight: 700;
-    font-style: italic;
-}
+  background-color: rgba(220, 20, 60, 0.699);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden; }
 
 /* ================================================== */
-   
-        /* Media Queries */
-
+/* Media Queries */
 @media screen and (min-width: 768px) {
-
-    /* Imagen fondo */
-
-* body{
-    background-image: url("../images/argia-logo.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    background-attachment: fixed;
-}
- 
-    /* Home */
-
-.mainHome{     
+  /* Home */
+  .mainHome {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 2fr;
     justify-items: center;
     align-items: center;
     text-align: center;
-
-
-    grid-template-areas: 
-    "video p"
-    ;   
-    }
-
-.vidHome{
-    grid-area: video;
-}
-
-.pHome{
-    grid-area: p;
-}
-
-.vidHome{
+    grid-template-areas: "video p"; }
+  .vidHome {
+    grid-area: video; }
+  .pHome {
+    grid-area: p; }
+  /* Animacion */
+  .vidHome {
     animation-name: ent;
     animation-duration: 1s;
-    animation-iteration-count: 1;
-}
-
-.vidHome:hover{
+    animation-iteration-count: 1; }
+  .vidHome:hover {
     transform: scale(1.3);
     transition-duration: 0.3s;
-    transition-timing-function: ease-in;
-}
-
-@keyframes ent{
-    0%{
-        transform: translateX(500px);
-    }
-
-    100%{
-        transform: translateX(0px);
-    
-    }
-}    
-
-    /* Velas */
-
-.vel-uno{
+    transition-timing-function: ease-in; }
+  @keyframes ent {
+    0% {
+      transform: translateX(500px); }
+    100% {
+      transform: translateX(0px); } }
+  /* Velas */
+  .vel-uno {
     display: grid;
     grid-template-columns: 3fr 3fr;
     grid-template-rows: 2fr;
-    grid-gap: 50px;
+    padding: 50px;
     justify-content: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-    /* formulario-fde  */
-.formFde{
+    flex-wrap: wrap; }
+  /* formulario-fde  */
+  .formFde {
     display: flex;
     flex-direction: column;
     justify-items: center;
-    text-align: center;
-}
-    /* Info */
-
-.mainInf {
+    text-align: center; }
+  /* Info */
+  .mainInf {
     display: grid;
     grid-gap: 25px;
-    grid-template-areas:
-    "header header"
-    "cont solub"
-    "hid ."
-    "durab gas"
-    "footer footer"
-    ;
-    }
-    
-    /* Areas Grids */
-
-.infoCont{
-    grid-area: cont;
-}
-
-.infoSolub{
-    grid-area: solub;
-}
-
-.infoGas{
-    grid-area: gas;
-}
-
-.infoHid{
-    grid-area: hid;
-}
-
-.infoDurab{
-    grid-area: durab;
-}
-   
-}  
+    grid-template-areas: "header header"
+ "cont solub"
+ "hid ."
+ "durab gas"
+ "footer footer"; }
+  /* Areas Grids */
+  .infoCont {
+    grid-area: cont; }
+  .infoSolub {
+    grid-area: solub; }
+  .infoGas {
+    grid-area: gas; }
+  .infoHid {
+    grid-area: hid; }
+  .infoDurab {
+    grid-area: durab; } }
 
 @media screen and (min-width: 1024px) {
-    
-    .vel-uno{   
-        display: grid;
-        grid-template-columns: 3fr 3fr 3fr;
-        grid-template-rows: 2fr;
-        padding-left: 50px;
-        
-        text-align: center;
-        font-size: large;
-    }
-    }
+  .vel-uno {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: 2fr;
+    grid-gap: 50px;
+    padding: 70px 150px 70px 150px;
+    text-align: center;
+    font-size: large; } }
