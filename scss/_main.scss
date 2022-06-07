@@ -12,8 +12,21 @@
 
     /*Encabezados*/
 
+.row{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.col{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+
 header{
-    display: grid;
+    display: flex;
     flex-direction: column;
     overflow: hidden;
 
@@ -31,9 +44,10 @@ header{
     /*Navegacion principal */
 
 nav{
-    font-size: large;
-    font-weight: 650;
+    font-size: medium;
+    font-weight: 750;
     font-variant: small-caps;
+    
     ul{
         list-style-type: none;
     }
@@ -76,6 +90,10 @@ main {
 
 
 /* =========================== */
+
+.nVel{
+    background-color: rgba(129, 24, 228, 0.938);
+}
 
 .hVel{
     background-color: rgba(137, 43, 226, 0.781);
@@ -128,6 +146,7 @@ main {
 
    display: flex;
    flex-wrap: wrap;
+   overflow: hidden;
    justify-content: center;
    text-align: center;
 }
