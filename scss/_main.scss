@@ -8,22 +8,20 @@
     background-position: center;
     background-attachment: fixed;
 
+    padding: 0px;
+    margin: 0px;
 }
 
-    /*Encabezados*/
-
 .row{
-    margin: 0px;
     padding: 0px;
-    overflow: hidden;
+    margin: 0px;
 }
 
 .col{
     margin: 0px;
     padding: 0px;
-    overflow: hidden;
 }
-
+    /*Encabezados*/
 
 header{
     display: flex;
@@ -73,17 +71,18 @@ footer{
     background-color:  rgba(255, 230, 0, 0.863);
 
     display: flex;
-    flex-wrap: wrap;   
-    text-align: center;
+    flex-wrap: wrap;  
 }
     
 main {
 
     p{
         font-size: large;
+        font-size: 18px;
         font-weight: 900;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-        padding: 10px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: 15px;
+        padding: 15px; 
     }
 
 }
