@@ -1,8 +1,9 @@
+@import "variables";
 
 /* Imagen de fondo */
 
-   * body{
-    background-image: url("../images/argia-logo.jpg");
+* body{
+    background-image: url("../images/fondo-arg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -21,54 +22,23 @@
     margin: 0px;
     padding: 0px;
 }
-    /*Encabezados*/
+@import "header";
+@import "nav";
+@import "footer";
 
-header{
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-
-
-    text-align: center;
-    font-family: 'Quicksand', sans-serif;
-    font-style: oblique;
-        h1{
-            margin: 0;
-        }
-
-}
-
-
-    /*Navegacion principal */
-
-nav{
-    font-size: medium;
-    font-weight: 750;
-    font-variant: small-caps;
-    
-    ul{
-        list-style-type: none;
-    }
-}
-    
-    /* Footer global */
-    
-footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
     /* Estilado pagina principal */
+.nHome{
+    background-color: rgba(255, 255, 255, 0.650);
+}
 
 .headerHome{
-    background-color: rgba(255, 230, 0, 0.822);
+    background-color: $color-home;
 }
     
     
 .mainHome{   
-    background-color:  rgba(255, 230, 0, 0.863);
+    background-color: $color-home;    
 
     display: flex;
     flex-wrap: wrap;  
@@ -91,20 +61,24 @@ main {
 /* =========================== */
 
 .nVel{
-    background-color: rgba(129, 24, 228, 0.938);
+    background-color: $color-vel;
 }
 
 .hVel{
-    background-color: rgba(137, 43, 226, 0.781);
+    background-color: rgba(137, 43, 226, 0.450);
+    padding-top: 25px;
 }
 
 .vel-uno{
-    background-color: rgba(137, 43, 226, 0.781); 
+    background-color: rgba(137, 43, 226, 0.350); 
 
     display: grid;
     grid-template-columns: 3fr;
     grid-template-rows: 2fr;
-    padding: 50px;
+    padding: 55px 50px 55px 50px;
+
+    align-items: center;
+    justify-content: space-between;
     
     text-align: center;
     font-size: large;
@@ -113,10 +87,9 @@ main {
 /* =========================== */
 
 .tablep{
-    display:inline-block;
+    display: inline-block;
 
-    border: 5px;
-    border-style: double;
+    border: $border;
     border-radius: 10px;
     justify-content: space-between;
 
@@ -127,21 +100,21 @@ main {
 }
 
 .tPcs{
-    background-color: rgb(255, 127, 80);
+    background-color: $color-pcs;
 }
 
 .nPcs{
-    background-color: rgba(255, 127, 80, 0.801);
+    background-color: $color-pcs;
 }
 
 /* =========================== */
 
 .hFde{
-    background-color: rgba(0, 255, 255, 0.87);
+    background-color: $color-fde;
 }
 
 .imgsFde{
-    background-color: rgba(127, 255, 212, 0.836);
+    background-color: $color-fde;
 
    display: flex;
    flex-wrap: wrap;
@@ -150,14 +123,8 @@ main {
    text-align: center;
 }
 
-
-.mainFde {
-    background-color: rgba(127, 255, 212, 0.623);
-
-}
-
 .formFde{
-    background-color: rgba(98, 233, 188, 0.836);
+    background-color: $color-fde;
 
     display: flex;
     justify-content: center;
@@ -170,15 +137,15 @@ main {
     /* Empieza Info */
 
 .headerInf{
-    background-color: rgba(220, 20, 60, 0.911);
+    background-color: $color-inf;
 }
 
 .nInf{    
-    background-color: rgb(220, 20, 60);
+    background-color: $color-inf;
 }
 
 .mainInf {
-    background-color: rgba(220, 20, 60, 0.699);
+    background-color: $color-inf;
         
     display: flex;
     flex-direction: column;
@@ -245,11 +212,11 @@ main {
 
 .vel-uno{
     display: grid;
+    flex-wrap: wrap;
     grid-template-columns: 3fr 3fr;
     grid-template-rows: 2fr;
-    padding: 50px;
-    justify-content: center;
-    flex-wrap: wrap;
+    padding: 75px 50px 75px 90px;
+    justify-content: space-between !important;
 }
 
     /* formulario-fde  */
@@ -304,7 +271,6 @@ main {
         grid-template-columns: 3fr 3fr 3fr;
         grid-template-rows: 2fr;
         grid-gap: 50px;
-        padding: 70px 150px 70px 150px;
         
         text-align: center;
         font-size: large;

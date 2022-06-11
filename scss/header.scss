@@ -1,0 +1,15 @@
+/*Encabezados*/
+
+header{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-style: oblique;
+        h1{
+            margin: 0;
+        }
+
+}
