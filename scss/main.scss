@@ -87,11 +87,12 @@ main {
 /* =========================== */
 
 .tablep{
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
 
     border: $border;
     border-radius: 10px;
-    justify-content: space-between;
 
     background-color: rgb(238, 238, 238);
 
